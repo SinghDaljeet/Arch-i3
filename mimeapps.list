@@ -1,0 +1,8 @@
+[Added Associations]
+image/png=kitty.desktop;
+application/pdf=org.pwmt.zathura.desktop;
+application/epub+zip=org.pwmt.zathura.desktop;
+
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
+application/epub+zip=org.pwmt.zathura.desktop
