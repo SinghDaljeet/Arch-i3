@@ -62,11 +62,12 @@ pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xback
      zip unzip unrar p7zip edk2-ovmf papirus-icon-theme tmux brightnessctl  \
      dosfstools qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ntfs-3g git pipewire pipewire-pulse xorg-xrandr wget \
      neovim ebtables iptables libguestfs arc-gtk-theme firefox \
-     libnotify dunst  \
+     libnotify dunst ufw \
      dhcpcd networkmanager pamixer i3lock \
      xdg-user-dirs i3status-rust
 
 systemctl enable NetworkManager.service 
+systemctl enable ufw.service
 systemctl enable libvirtd.service
 rm /bin/sh
 ln -s dash /bin/sh
