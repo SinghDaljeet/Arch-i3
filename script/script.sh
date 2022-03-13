@@ -61,7 +61,7 @@ pacman -S --noconfirm xorg-server xorg-xinit xorg-xkill xorg-xsetroot xorg-xback
      fzf man-db i3-wm kitty gvfs udisks lxqt-polickykit feh youtube-dl xclip maim \
      zip unzip unrar p7zip edk2-ovmf papirus-icon-theme tmux brightnessctl  \
      dosfstools qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat ntfs-3g git pipewire pipewire-pulse xorg-xrandr wget \
-     neovim ebtables iptables libguestfs arc-gtk-theme firefox \
+     neovim ebtables iptables firejail libguestfs arc-gtk-theme firefox \
      libnotify dunst ufw \
      dhcpcd networkmanager pamixer i3lock \
      xdg-user-dirs i3status-rust
