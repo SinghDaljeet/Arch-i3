@@ -2,6 +2,6 @@
 Version=1.0
 Name=FreeTube
 Type=Application
-Exec=firejail --appimage --profile=~/.config/firejail/freetube.profile --private ~/.freetube/freetube.AppImage
+Exec=firejail --appimage --profile=~/.config/firejail/freetube.profile ~/.freetube/freetube.AppImage
 Terminal=false
 Keywords=Youtube alternative
