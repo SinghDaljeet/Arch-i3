@@ -11,7 +11,6 @@ then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
-
 ### tmux with each login shell ###
 if [[ $DISPLAY ]]; then
         [[ $- != *i* ]] && return
@@ -39,6 +38,9 @@ alias rr=ranger
 alias pacsyu='sudo pacman -Syyu'
 alias ..='cd ..'
 
+# xclip
+alias xclip="xclip -sel clip"
+
 # ls and grep color
 alias exa='exa -lah --color=auto'
 alias ls='exa'
@@ -53,17 +55,16 @@ alias cp='cp -i'
 alias mkdir='mkdir -pv'
 
 # vi mode in bash
-set -o vi
-bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
+#set -o vi
+#bind '"\e[A": history-search-backward'
+#bind '"\e[B": history-search-forward'
 
 #Setting default editor
 export EDITOR=nvim
 export VISUAL="$VISUAL"
 export VISUAL=nvim
 
-export PS1="\e[0;32m[\h \W]\$ \e[0m"
-
+export PS1="\[\e[32m\][\[\e[m\]\[\e[32m\]\h\[\e[m\] \[\e[32m\]\W\[\e[m\]\[\e[32m\]]\[\e[m\]\[\e[32m\]\\$\[\e[m\] "
 
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
